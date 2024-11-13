@@ -1,11 +1,13 @@
 package studio8;
 
-public class Question {
+public class Question 
+{
 	private String prompt;
 	private String answer;
 	private int points;
 	
-	public Question(String prompt, String answer, int points) {
+	public Question(String prompt, String answer, int points) 
+	{
 		this.prompt = prompt;
 		this.answer = answer;
 		this.points = points;
@@ -16,7 +18,8 @@ public class Question {
 	}
 	
 	public int checkAnswer(String givenAnswer) {
-		if(answer.equals(givenAnswer)) { //String comparison
+		if(answer.equals(givenAnswer)) 
+		{ //String comparison
 			return this.points;
 		} else {
 			return 0;
